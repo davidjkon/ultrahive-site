@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraHive — Hexagonal Puzzle Game</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+            background: #1a0f08;
+            color: #f5e6d0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .container { max-width: 600px; text-align: center; }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffcc00, #ff8800);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+        .tagline {
+            font-size: 1.1rem;
+            color: #c9a060;
+            margin-bottom: 40px;
+        }
+        .badge {
+            display: inline-block;
+            margin: 20px 0 40px;
+        }
+        .badge img { height: 60px; }
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            line-height: 1.8;
+        }
+        .features li {
+            list-style: none;
+            padding: 4px 0;
+        }
+        .features li::before {
+            content: "⬡ ";
+            color: #ff8800;
+        }
+        .section {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 136, 0, 0.15);
+        }
+        h2 {
+            font-size: 1.3rem;
+            color: #ffaa33;
+            margin-bottom: 16px;
+        }
+        p { line-height: 1.6; color: #c9a060; margin-bottom: 12px; }
+        a { color: #ffaa33; }
+        .footer {
+            margin-top: 60px;
+            font-size: 0.85rem;
+            color: #6b5a40;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UltraHive</h1>
+        <p class="tagline">A hexagonal falling-block puzzle game</p>
+
+        <a href="https://apps.apple.com/app/ultrahive/id0000000000" class="badge">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <ul class="features">
+            <li>Hexagonal grid — a fresh take on block puzzles</li>
+            <li>25 levels of increasing intensity</li>
+            <li>Color chain combos — connect 16+ cells for massive clears</li>
+            <li>5 strategic power-ups to turn the tide</li>
+            <li>Game Center leaderboards</li>
+            <li>Persistent coin economy across games</li>
+        </ul>
+
+        <div class="section" id="support">
+            <h2>Support</h2>
+            <p>Having issues or have feedback? We'd love to hear from you.</p>
+            <p>Email: <a href="mailto:support@ultrahive.app">support@ultrahive.app</a></p>
+        </div>
+
+        <div class="section" id="privacy">
+            <h2>Privacy Policy</h2>
+            <p>UltraHive does not collect, store, or transmit any personal data. The game uses Game Center for leaderboards, which is governed by Apple's privacy policy. High scores and coins are stored locally on your device. No analytics or tracking tools are used.</p>
+        </div>
+
+        <p class="footer">&copy; 2025 UltraHive. All rights reserved.</p>
+    </div>
+</body>
+</html>
