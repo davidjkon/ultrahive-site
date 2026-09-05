@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — UltraHive</title>
+    <meta name="description" content="UltraHive does not collect, store, or transmit personal data. Scores and coins stay on your device. No analytics, ads, or tracking.">
+    <meta name="theme-color" content="#0d0a14">
+    <link rel="canonical" href="https://ultrahive.app/privacy-policy/">
+    <link rel="icon" href="/assets/app-icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/app-icon.png">
+
+    <meta property="og:title" content="Privacy Policy — UltraHive">
+    <meta property="og:description" content="UltraHive does not collect, store, or transmit personal data. Scores and coins stay on your device.">
+    <meta property="og:image" content="https://ultrahive.app/assets/og-share.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="UltraHive — $2.99 neon hex puzzle, with title screen and honeycomb gameplay">
+    <meta property="og:url" content="https://ultrahive.app/privacy-policy/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UltraHive">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Privacy Policy — UltraHive">
+    <meta name="twitter:description" content="UltraHive does not collect, store, or transmit personal data. Scores and coins stay on your device.">
+    <meta name="twitter:image" content="https://ultrahive.app/assets/og-share.jpg">
+    <meta name="twitter:image:alt" content="UltraHive — $2.99 neon hex puzzle, with title screen and honeycomb gameplay">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0d0a14;
+            --bg-card: rgba(255, 255, 255, 0.04);
+            --border: rgba(255, 136, 0, 0.12);
+            --text: #f0e6d6;
+            --text-muted: #8a7a6a;
+            --accent: #ff8800;
+            --accent-light: #ffcc00;
+            --purple: #a855f7;
+            --nav-height: 64px;
+        }
+        html { scroll-behavior: smooth; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--accent-light); }
+        img { max-width: 100%; display: block; }
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: var(--nav-height);
+            background: rgba(13, 10, 20, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-inner {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-light), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-logo .hex { -webkit-text-fill-color: var(--accent); font-size: 1rem; }
+        .nav-cta {
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            color: #000 !important;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+        section { padding: 100px 24px 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .section-label {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 800;
+            margin: 40px 0 12px;
+        }
+        .updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 28px;
+        }
+        .policy p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        .policy ul {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin: 0 0 16px 1.25rem;
+        }
+        .policy li { margin-bottom: 8px; }
+        .footer {
+            padding: 40px 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            list-style: none;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        .footer-links a { color: var(--text-muted); font-size: 0.85rem; }
+        .footer-links a:hover { color: var(--text); }
+        .footer-copy { font-size: 0.8rem; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo"><span class="hex">&#x2B21;</span> UltraHive</a>
+        <a href="/" class="nav-cta">Home</a>
+    </div>
+</nav>
+
+<section>
+    <div class="container policy">
+        <p class="section-label">Privacy Policy</p>
+        <h1>UltraHive Privacy Policy</h1>
+        <p class="updated">Last updated September 2, 2026</p>
+
+        <p>This privacy policy applies to the UltraHive game on iOS and Android, and to this website. UltraHive is published by Ripsaw LLC. Questions: <a href="mailto:support@ultrahive.app">support@ultrahive.app</a>.</p>
+
+        <h2>What we collect</h2>
+        <p>UltraHive does not collect, store, or transmit personal data. There is no UltraHive account. The game has no in-app purchases and no ads. We do not use analytics, advertising, or tracking SDKs.</p>
+
+        <h2>Scores and coins</h2>
+        <p>Scores and coins stay on your device. They are not sent to Ripsaw LLC.</p>
+
+        <h2>iOS</h2>
+        <p>On iPhone, iPad, Mac, and Apple Vision Pro, UltraHive uses Apple Game Center only for leaderboards. Game Center is operated by Apple and is governed by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. If you are not signed into Game Center, scores stay local on your device.</p>
+
+        <h2>Android</h2>
+        <p>The Android app is offline. It does not use the INTERNET permission. It does not use Play Games. Scores stay on your device.</p>
+
+        <h2>This website</h2>
+        <p>ultrahive.app is a static marketing site. We do not run analytics, ads, or tracking on it, and we do not collect personal data through it. If you email <a href="mailto:support@ultrahive.app">support@ultrahive.app</a>, we use that message only to respond.</p>
+
+        <h2>Children</h2>
+        <p>UltraHive is rated for all ages. We do not collect personal data from anyone, including children.</p>
+
+        <h2>Changes</h2>
+        <p>If this policy changes, we will update this page. The date at the top is the last revision.</p>
+
+        <h2>Contact</h2>
+        <p>Ripsaw LLC<br>
+        <a href="mailto:support@ultrahive.app">support@ultrahive.app</a></p>
+    </div>
+</section>
+
+<footer class="footer">
+    <ul class="footer-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#support">Support</a></li>
+        <li><a href="/press/">Press</a></li>
+        <li><a href="https://apps.apple.com/us/app/ultrahive/id6759464109">App Store</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 Ripsaw LLC. All rights reserved.</p>
+</footer>
+</body>
+</html>
