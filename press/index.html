@@ -29,6 +29,48 @@
     <meta name="twitter:image" content="https://ultrahive.app/assets/og-share.jpg">
     <meta name="twitter:image:alt" content="UltraHive — $2.99 neon hex puzzle for iOS and Android, with title screen and honeycomb gameplay">
 
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "@id": "https://ultrahive.app/press/#webpage",
+            "url": "https://ultrahive.app/press/",
+            "name": "Press Kit",
+            "isPartOf": {
+                "@id": "https://ultrahive.app/#website"
+            },
+            "about": {
+                "@id": "https://ultrahive.app/#app"
+            },
+            "publisher": {
+                "@id": "https://ultrahive.app/#org"
+            },
+            "inLanguage": "en",
+            "dateModified": "2026-09-23"
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "UltraHive",
+                    "item": "https://ultrahive.app/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Press Kit",
+                    "item": "https://ultrahive.app/press/"
+                }
+            ]
+        }
+    ]
+}
+    </script>
+
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
@@ -161,6 +203,7 @@
             gap: 12px;
             margin: 20px 0 8px;
         }
+        .shots a, .shots picture { display: block; }
         .shots img {
             width: 100%;
             height: auto;
@@ -198,7 +241,7 @@
     </style>
 </head>
 <body>
-<nav class="nav">
+<nav class="nav" aria-label="Main">
     <div class="nav-inner">
         <a href="/" class="nav-logo"><span class="hex">&#x2B21;</span> UltraHive</a>
         <div class="nav-ctas">
@@ -208,6 +251,7 @@
     </div>
 </nav>
 
+<main>
 <section>
     <div class="container">
         <p class="section-label">Press Kit</p>
@@ -237,17 +281,18 @@
 
         <h2>Screenshots</h2>
         <div class="shots">
-            <img src="/assets/01_TitleScreen.png" alt="UltraHive title screen with hexagonal logo, Deploy, and Hive Records buttons" width="220" height="476">
-            <img src="/assets/02_Gameplay_Start.png" alt="UltraHive gameplay on an 11-column honeycomb grid with a falling hex piece and ghost landing preview" width="220" height="476">
-            <img src="/assets/03_Gameplay_Mid.png" alt="UltraHive mid-game honeycomb board with stacked hex pieces, score, and five power-up buttons" width="220" height="476">
-            <img src="/assets/04_Gameplay_Active.png" alt="UltraHive gameplay with a falling yellow hex piece, ghost preview, and colorful stacked honeycomb" width="220" height="476">
+            <a href="/assets/01_TitleScreen.png"><picture><source srcset="/assets/01_TitleScreen.webp" type="image/webp"><img src="/assets/01_TitleScreen.png" alt="UltraHive title screen with hexagonal logo, Deploy, and Hive Records buttons" width="220" height="476" loading="lazy"></picture></a>
+            <a href="/assets/02_Gameplay_Start.png"><picture><source srcset="/assets/02_Gameplay_Start.webp" type="image/webp"><img src="/assets/02_Gameplay_Start.png" alt="UltraHive gameplay on an 11-column honeycomb grid with a falling hex piece and ghost landing preview" width="220" height="476" loading="lazy"></picture></a>
+            <a href="/assets/03_Gameplay_Mid.png"><picture><source srcset="/assets/03_Gameplay_Mid.webp" type="image/webp"><img src="/assets/03_Gameplay_Mid.png" alt="UltraHive mid-game honeycomb board with stacked hex pieces, score, and five power-up buttons" width="220" height="476" loading="lazy"></picture></a>
+            <a href="/assets/04_Gameplay_Active.png"><picture><source srcset="/assets/04_Gameplay_Active.webp" type="image/webp"><img src="/assets/04_Gameplay_Active.png" alt="UltraHive gameplay with a falling yellow hex piece, ghost preview, and colorful stacked honeycomb" width="220" height="476" loading="lazy"></picture></a>
         </div>
-        <p class="caption">Save these images from this page. Please credit UltraHive / Ripsaw LLC.</p>
+        <p class="caption">Tap a screenshot to open the full-resolution PNG (1284 × 2778). Please credit UltraHive / Ripsaw LLC.</p>
 
         <h2>Contact</h2>
         <p class="pitch">Press and support: <a href="mailto:support@ultrahive.app">support@ultrahive.app</a></p>
     </div>
 </section>
+</main>
 
 <footer class="footer">
     <ul class="footer-links">

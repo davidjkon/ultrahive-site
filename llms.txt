@@ -1,0 +1,74 @@
+# UltraHive
+
+> UltraHive is a $2.99 hexagonal falling-block puzzle game for iPhone, iPad, Mac (Apple Silicon), Apple Vision Pro, and Android, published by Ripsaw LLC. Players rotate hex-shaped pieces in 60° steps on an 11-column honeycomb board, clear rows, and connect same-colored cells into chains. No ads, no in-app purchases, no personal data collected.
+
+## Key facts
+
+- Name: UltraHive
+- Genre: Puzzle (hex-grid falling-block puzzle; often described as "Tetris with hexagons")
+- Developer / publisher: Ripsaw LLC
+- Price: $2.99 USD one-time purchase. No ads, no in-app purchases. Family Sharing on the App Store.
+- Platforms: iPhone (iOS 17+), iPad (iPadOS 17+), Mac with Apple Silicon (macOS 14+), Apple Vision Pro (visionOS 1.0+), Android (Google Play)
+- Current version: 1.6.0 (first released 2026-02-24)
+- Age rating: 4+ (App Store), Everyone (Google Play)
+- Game modes: Classic (endless hex drop, 25 intensity levels) and Hive Bits (28 handcrafted puzzle levels with walls, moths, bee allies, and honey collection)
+- Pieces: 15 unique pieces from monohex to pentahex, in six colors
+- Power-ups (5): PLACE, CLEAR, SLOW, FLIP, TINY — bought with coins earned in play
+- Other features: ghost piece preview, hold piece, procedural soundtrack, persistent coins
+- Leaderboards: Apple Game Center on Apple devices; Android is offline and does not use Play Games
+- Privacy: no accounts, analytics, ads, or tracking; scores and coins stay on device
+- Support and press contact: support@ultrahive.app
+
+## Links
+
+- [Website](https://ultrahive.app/): Features, game modes, screenshots, and FAQ
+- [App Store](https://apps.apple.com/us/app/ultrahive/id6759464109): Download for iPhone, iPad, Mac, and Apple Vision Pro (App Store ID 6759464109)
+- [Google Play](https://play.google.com/store/apps/details?id=com.ultrahive.app): Download for Android (package com.ultrahive.app)
+- [Press kit](https://ultrahive.app/press/): Key facts, screenshots, and press contact
+- [Privacy policy](https://ultrahive.app/privacy/): Full privacy policy
+
+## FAQ
+
+### What is UltraHive?
+
+UltraHive is a $2.99 hexagonal falling-block puzzle game for iPhone, iPad, Mac, Apple Vision Pro, and Android, made by Ripsaw LLC. You drop and rotate hex-shaped pieces onto an 11-column honeycomb board to clear rows and build same-color chains. It has two modes: Classic (25 intensity levels) and Hive Bits (28 handcrafted puzzle levels).
+
+### Is UltraHive like Tetris?
+
+Yes. If you like Tetris, UltraHive plays in a familiar way: pieces fall, you rotate and place them, and full rows clear. The difference is the grid. UltraHive uses hexagons instead of squares, so pieces rotate in 60° steps across six directions, and you can also score by connecting same-colored cells into chains.
+
+### What devices does UltraHive support?
+
+UltraHive runs on iPhone (iOS 17+), iPad (iPadOS 17+), Mac with Apple Silicon (macOS 14+), Apple Vision Pro (visionOS 1.0+), and Android (Google Play).
+
+### How much does UltraHive cost? Are there ads or in-app purchases?
+
+UltraHive costs $2.99 once. There are no ads and no in-app purchases, so one purchase gets the full game. On the App Store it also supports Family Sharing for up to 6 family members.
+
+### Does UltraHive work offline?
+
+Yes. The Android app is fully offline and does not request internet access. On Apple devices the game plays without a connection; only the optional Game Center leaderboards use the network.
+
+### Does UltraHive collect my data?
+
+No. UltraHive does not collect, store, or transmit any personal data. Scores and coins are stored locally on your device. No analytics or tracking tools are used. Read the privacy policy.
+
+### What is Hive Bits?
+
+Hive Bits is UltraHive's strategic puzzle mode. It has 28 handcrafted levels with walls, moth obstacles, and bee allies. Your goal is to collect all the honey on each increasingly challenging layout.
+
+### What power-ups are in UltraHive?
+
+Classic mode has 5 power-ups bought with coins you earn while playing: PLACE (set a piece anywhere), CLEAR (wipe a row), SLOW (10 seconds of slower drops), FLIP (invert gravity), and TINY (shrink the piece to a single hex). Coins carry over between games.
+
+### Does UltraHive have leaderboards?
+
+Yes, on Apple devices. UltraHive uses Apple Game Center for global leaderboards so you can compete with players worldwide and track your personal bests. The Android version is offline and does not use Play Games, so scores stay on your device.
+
+### Is UltraHive suitable for kids?
+
+Yes. UltraHive is rated 4+ on the App Store and Everyone on Google Play. It has no ads, no in-app purchases, and collects no personal data.
+
+### Who makes UltraHive?
+
+UltraHive is developed and published by Ripsaw LLC. For support or press, email support@ultrahive.app.
