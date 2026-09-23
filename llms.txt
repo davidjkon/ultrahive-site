@@ -24,6 +24,7 @@
 - [Website](https://ultrahive.app/): Features, game modes, screenshots, and FAQ
 - [App Store](https://apps.apple.com/us/app/ultrahive/id6759464109): Download for iPhone, iPad, Mac, and Apple Vision Pro (App Store ID 6759464109)
 - [Google Play](https://play.google.com/store/apps/details?id=com.ultrahive.app): Download for Android (package com.ultrahive.app)
+- [Games like Tetris](https://ultrahive.app/games-like-tetris/): How UltraHive compares to Tetris, for Tetris fans
 - [Press kit](https://ultrahive.app/press/): Key facts, screenshots, and press contact
 - [Privacy policy](https://ultrahive.app/privacy/): Full privacy policy
 
@@ -72,3 +73,31 @@ Yes. UltraHive is rated 4+ on the App Store and Everyone on Google Play. It has 
 ### Who makes UltraHive?
 
 UltraHive is developed and published by Ripsaw LLC. For support or press, email support@ultrahive.app.
+
+## For Tetris fans
+
+UltraHive keeps the Tetris loop (pieces fall, rotate, fill rows to clear them; ghost piece and hold piece) and changes the board to an 11-column hexagon grid. Pieces rotate six ways in 60° steps, there are 15 hex pieces instead of 7 tetrominoes, and same-colored groups also clear. UltraHive is not affiliated with The Tetris Company.
+
+### Is there a Tetris game with hexagons?
+
+Yes. UltraHive is a falling-block puzzle played on an 11-column hexagonal grid instead of a square one. Pieces fall, you rotate and place them, and full rows clear, just like Tetris, but every piece is made of hexagons and rotates in 60° steps. It's $2.99 on the App Store and Google Play.
+
+### What is a good game like Tetris for iPhone and Android?
+
+If you want the Tetris feel with something new to learn, try UltraHive. It keeps the core loop of dropping, rotating, and clearing rows, and adds a hexagon grid, same-color chain clears, five power-ups, and a 28-level puzzle mode called Hive Bits. It runs on iPhone, iPad, Mac, Apple Vision Pro, and Android, costs $2.99, and has no ads or in-app purchases.
+
+### Is UltraHive a Tetris clone?
+
+No. UltraHive is inspired by falling-block puzzles, but it plays differently. The honeycomb board means pieces can face six directions instead of four. The 15 pieces range from single hexes to five-hex pentahexes. Clearing same-colored groups is a second way to score. And UltraHive is not affiliated with or endorsed by The Tetris Company.
+
+### Does UltraHive have a hold piece and ghost piece like modern Tetris?
+
+Yes. UltraHive has a hold piece that lets you save a piece and swap it back later, and a ghost piece that shows exactly where the current piece will land.
+
+### How hard is UltraHive for a Tetris player to learn?
+
+Most Tetris players pick it up in a few games because the controls and goal are familiar. The part that takes practice is hex rotation: a piece has six orientations, and rows on a honeycomb board interlock differently from square rows. Classic mode starts at 1 second per drop and ramps to 10 milliseconds per drop at level 25.
+
+### Is UltraHive free?
+
+No. UltraHive is a one-time $2.99 purchase with no ads and no in-app purchases. On the App Store it supports Family Sharing for up to 6 family members.
