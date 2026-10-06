@@ -1,0 +1,26 @@
+# UltraHive
+
+> UltraHive is a premium hexagonal falling-block puzzle by Ripsaw LLC. $2.99 one-time, no ads, no in-app purchases, on iPhone and Android.
+
+Pieces drop onto a neon 11-column honeycomb and rotate in 60-degree steps. A hold piece and a ghost preview are included. Color chains of 8 or more cells clear. Classic mode has 25 intensity levels and five power-ups: place anywhere, clear a row, slow time, flip gravity, and shrink to a single hex. Hive Bits is 28 handcrafted puzzles with walls, moths, bee allies, and honey.
+
+The iOS app launched on 2026-02-24. Version 1.6.0 was released on 2026-07-23. Game Center is used for leaderboards only. Family Sharing is available on Apple. Android has been on Google Play since 2026-09-10 and is fully offline. Scores and coins stay on the device. UltraHive does not collect personal data.
+
+No rating, review count, award, or download total is stated on this site.
+
+## Pages
+
+- [Home](https://ultrahive.app/): Product page with features, Classic and Hive Bits, screenshots, and FAQ
+- [How to play](https://ultrahive.app/how-to-play/): Rules for rotation, clears, power-ups, and Hive Bits
+- [Press kit](https://ultrahive.app/press/): Facts, screenshots, and contact for reviewers
+- [Privacy policy](https://ultrahive.app/privacy/): No personal data collection. Canonical privacy URL
+
+## Store listings
+
+- [App Store](https://apps.apple.com/us/app/ultrahive/id6759464109): iPhone, iPad, Mac with Apple Silicon, and Apple Vision Pro. App Store id 6759464109. Launched 2026-02-24. Version 1.6.0 on 2026-07-23
+- [Google Play](https://play.google.com/store/apps/details?id=com.ultrahive.app): Android package com.ultrahive.app. Live since 2026-09-10. Fully offline
+
+## Publisher
+
+- [Ripsaw LLC](https://ripsaw.co): Publisher of UltraHive
+- Support and press: support@ultrahive.app
