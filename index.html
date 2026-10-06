@@ -3,142 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UltraHive — $2.99 Hex Puzzle for iOS & Android | Tetris meets hex grids</title>
-    <meta name="description" content="Drop hexagonal pieces into a neon honeycomb. $2.99 hex puzzle for iOS and Android with 25 classic levels, 28 Hive Bits puzzles, 5 power-ups, and no ads.">
-    <meta name="keywords" content="UltraHive, hexagon puzzle, Tetris alternative, falling block puzzle, iOS puzzle game, Android puzzle game, hex grid game, neon puzzle, cyberpunk game, color chain puzzle, honeycomb puzzle, hex puzzle game, arcade puzzle">
+    <title>UltraHive — Hexagonal Tetris Puzzle for iPhone &amp; Android</title>
+    <meta name="description" content="A premium tetris-like hex block puzzle with no ads. Neon 11-column honeycomb, 60° rotation, hold piece, and ghost preview. $2.99 once on iPhone and Android.">
+    <meta name="keywords" content="hexagonal tetris, hex block puzzle, tetris-like game no ads, premium puzzle game, UltraHive, honeycomb puzzle, iPhone puzzle game, Android puzzle game">
+    <meta name="author" content="Ripsaw LLC">
     <meta name="theme-color" content="#0d0a14">
-    <link rel="canonical" href="https://ultrahive.app">
-    <link rel="icon" href="/assets/app-icon.png" type="image/png">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://ultrahive.app/">
+    <link rel="icon" href="/assets/favicon-48.png" type="image/png" sizes="48x48">
     <link rel="apple-touch-icon" href="/assets/app-icon.png">
+    <link rel="preload" as="image" href="/assets/app-icon-360.webp" type="image/webp" fetchpriority="high">
     <meta name="apple-itunes-app" content="app-id=6759464109">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="UltraHive — $2.99 Hex Puzzle for iOS & Android">
-    <meta property="og:description" content="Neon hexagonal falling-block puzzle. $2.99, no ads, no IAP. 25 classic levels, 28 Hive Bits puzzles, 5 power-ups. iPhone, iPad, Mac, Vision Pro, and Android.">
+    <meta property="og:title" content="UltraHive — Hexagonal Tetris Puzzle for iPhone &amp; Android">
+    <meta property="og:description" content="A premium tetris-like hex block puzzle with no ads. Neon 11-column honeycomb, 60° rotation, hold piece, and ghost preview. $2.99 once on iPhone and Android.">
     <meta property="og:image" content="https://ultrahive.app/assets/og-share.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="UltraHive — $2.99 neon hex puzzle for iOS and Android, with title screen and honeycomb gameplay">
-    <meta property="og:url" content="https://ultrahive.app">
+    <meta property="og:url" content="https://ultrahive.app/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="UltraHive">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="UltraHive — $2.99 Hex Puzzle for iOS & Android">
-    <meta name="twitter:description" content="Neon hexagonal falling-block puzzle. $2.99, no ads, no IAP. iPhone, iPad, Mac, Vision Pro, and Android.">
+    <meta name="twitter:title" content="UltraHive — Hexagonal Tetris Puzzle for iPhone &amp; Android">
+    <meta name="twitter:description" content="A premium tetris-like hex block puzzle with no ads. Neon 11-column honeycomb, 60° rotation, hold piece, and ghost preview. $2.99 once on iPhone and Android.">
     <meta name="twitter:image" content="https://ultrahive.app/assets/og-share.jpg">
     <meta name="twitter:image:alt" content="UltraHive — $2.99 neon hex puzzle for iOS and Android, with title screen and honeycomb gameplay">
 
-    <!-- Structured Data -->
+    <!-- Structured data uses price and product facts only. -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "UltraHive",
-        "description": "A hexagonal falling-block puzzle for iPhone, iPad, Mac, Apple Vision Pro, and Android. 25 classic intensity levels, 28 Hive Bits puzzles, 5 power-ups, no ads.",
-        "url": "https://ultrahive.app",
-        "image": [
-            "https://ultrahive.app/assets/og-share.jpg",
-            "https://ultrahive.app/assets/app-icon.png"
-        ],
-        "applicationCategory": "GameApplication",
-        "applicationSubCategory": "Puzzle",
-        "operatingSystem": "iOS 17+, iPadOS 17+, macOS 14+ (Apple Silicon), visionOS 1.0+, Android",
-        "softwareVersion": "1.6.0",
-        "datePublished": "2026-02-24",
-        "contentRating": "4+",
-        "inLanguage": "en",
-        "downloadUrl": [
-            "https://apps.apple.com/us/app/ultrahive/id6759464109",
-            "https://play.google.com/store/apps/details?id=com.ultrahive.app"
-        ],
-        "installUrl": [
-            "https://apps.apple.com/us/app/ultrahive/id6759464109",
-            "https://play.google.com/store/apps/details?id=com.ultrahive.app"
-        ],
-        "screenshot": [
-            "https://ultrahive.app/assets/01_TitleScreen.png",
-            "https://ultrahive.app/assets/02_Gameplay_Start.png",
-            "https://ultrahive.app/assets/03_Gameplay_Mid.png",
-            "https://ultrahive.app/assets/04_Gameplay_Active.png"
-        ],
-        "offers": [
+        "@graph": [
             {
-                "@type": "Offer",
-                "name": "App Store",
-                "price": "2.99",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "url": "https://apps.apple.com/us/app/ultrahive/id6759464109"
+                "@type": "Organization",
+                "@id": "https://ultrahive.app/#organization",
+                "name": "Ripsaw LLC",
+                "url": "https://ripsaw.co"
             },
             {
-                "@type": "Offer",
-                "name": "Google Play",
-                "price": "2.99",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "url": "https://play.google.com/store/apps/details?id=com.ultrahive.app"
-            }
-        ],
-        "author": {
-            "@type": "Organization",
-            "name": "Ripsaw LLC",
-            "url": "https://ripsaw.co"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Ripsaw LLC",
-            "url": "https://ripsaw.co"
-        }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+                "@type": "WebSite",
+                "@id": "https://ultrahive.app/#website",
+                "url": "https://ultrahive.app/",
+                "name": "UltraHive",
+                "publisher": { "@id": "https://ultrahive.app/#organization" },
+                "inLanguage": "en"
+            },
             {
-                "@type": "Question",
-                "name": "What devices does UltraHive support?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "UltraHive runs on iPhone (iOS 17+), iPad (iPadOS 17+), Mac with Apple Silicon (macOS 14+), Apple Vision Pro (visionOS 1.0+), and Android."
+                "@type": "WebPage",
+                "@id": "https://ultrahive.app/#webpage",
+                "url": "https://ultrahive.app/",
+                "name": "UltraHive — Hexagonal Tetris Puzzle for iPhone & Android",
+                "description": "A premium tetris-like hex block puzzle with no ads. Neon 11-column honeycomb, 60° rotation, hold piece, and ghost preview. $2.99 once on iPhone and Android.",
+                "isPartOf": { "@id": "https://ultrahive.app/#website" },
+                "about": { "@id": "https://ultrahive.app/#game" },
+                "inLanguage": "en",
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://ultrahive.app/assets/og-share.jpg",
+                    "width": 1200,
+                    "height": 630
                 }
             },
             {
-                "@type": "Question",
-                "name": "How much does it cost?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "UltraHive is $2.99 with no ads and no in-app purchases. One purchase, full game. It also supports Family Sharing for up to 6 family members."
-                }
+                "@type": ["VideoGame", "MobileApplication"],
+                "@id": "https://ultrahive.app/#game",
+                "name": "UltraHive",
+                "url": "https://ultrahive.app/",
+                "description": "UltraHive is a premium hexagonal falling-block puzzle by Ripsaw LLC. Pieces drop on a neon 11-column honeycomb and rotate in 60-degree steps. A hold piece and ghost preview are included. Color chains of 8 or more cells clear. Classic mode has 25 intensity levels and five power-ups: place anywhere, clear a row, slow time, flip gravity, and shrink to a single hex. Hive Bits has 28 handcrafted puzzles with walls, moths, bee allies, and honey. $2.99 one-time, no ads, no in-app purchases. The iOS app launched on 2026-02-24 (version 1.6.0 on 2026-07-23) and uses Game Center for leaderboards only. Android has been on Google Play since 2026-09-10 and is fully offline.",
+                "image": [
+                    "https://ultrahive.app/assets/og-share.jpg",
+                    "https://ultrahive.app/assets/app-icon.png"
+                ],
+                "applicationCategory": "GameApplication",
+                "genre": "Puzzle",
+                "playMode": "https://schema.org/SinglePlayer",
+                "gamePlatform": ["iOS", "iPadOS", "macOS", "visionOS", "Android"],
+                "operatingSystem": "iOS 17+, iPadOS 17+, macOS 14+ (Apple Silicon), visionOS 1.0+, Android",
+                "softwareVersion": "1.6.0",
+                "datePublished": "2026-02-24",
+                "contentRating": "4+ on the App Store, Everyone on Google Play",
+                "isFamilyFriendly": true,
+                "inLanguage": "en",
+                "downloadUrl": [
+                    "https://apps.apple.com/us/app/ultrahive/id6759464109",
+                    "https://play.google.com/store/apps/details?id=com.ultrahive.app"
+                ],
+                "installUrl": [
+                    "https://apps.apple.com/us/app/ultrahive/id6759464109",
+                    "https://play.google.com/store/apps/details?id=com.ultrahive.app"
+                ],
+                "sameAs": [
+                    "https://apps.apple.com/us/app/ultrahive/id6759464109",
+                    "https://play.google.com/store/apps/details?id=com.ultrahive.app"
+                ],
+                "screenshot": [
+                    "https://ultrahive.app/assets/01_TitleScreen.png",
+                    "https://ultrahive.app/assets/02_Gameplay_Start.png",
+                    "https://ultrahive.app/assets/03_Gameplay_Mid.png",
+                    "https://ultrahive.app/assets/04_Gameplay_Active.png"
+                ],
+                "offers": [
+                    {
+                        "@type": "Offer",
+                        "name": "App Store",
+                        "price": "2.99",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "url": "https://apps.apple.com/us/app/ultrahive/id6759464109"
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "Google Play",
+                        "price": "2.99",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "url": "https://play.google.com/store/apps/details?id=com.ultrahive.app"
+                    }
+                ],
+                "author": { "@id": "https://ultrahive.app/#organization" },
+                "publisher": { "@id": "https://ultrahive.app/#organization" }
             },
             {
-                "@type": "Question",
-                "name": "Does it collect my data?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No. UltraHive does not collect, store, or transmit any personal data. Scores and coins are stored locally on your device. No analytics or tracking tools are used. See https://ultrahive.app/privacy/."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is Hive Bits?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Hive Bits is a strategic puzzle mode introduced in version 1.0.1. It features 28 handcrafted levels with walls, moth obstacles, and bee allies. Your goal is to collect honey across increasingly challenging layouts."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Does it support Game Center?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. UltraHive integrates with Apple Game Center for global leaderboards so you can compete with players worldwide and track your personal bests."
-                }
+                "@type": "FAQPage",
+                "@id": "https://ultrahive.app/#faq",
+                "url": "https://ultrahive.app/#faq",
+                "isPartOf": { "@id": "https://ultrahive.app/#webpage" },
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is UltraHive?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "UltraHive is a premium hexagonal falling-block puzzle by Ripsaw LLC. Pieces drop onto a neon 11-column honeycomb and rotate in 60-degree steps. It costs $2.99 once, with no ads and no in-app purchases, on iPhone and Android."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is UltraHive a hexagonal Tetris?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. It is a tetris-like falling-block puzzle on hexagons instead of squares. You can hold one piece, and a ghost preview shows where the piece will land. There are no ads and no in-app purchases."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How much does UltraHive cost?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "UltraHive is $2.99 one-time on the App Store and Google Play. There are no ads and no in-app purchases. Family Sharing is available on Apple."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How do you play UltraHive?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Drop pieces on the 11-column honeycomb, rotate them in 60-degree steps, and use the ghost preview and hold piece to plan a landing. Clear a full row, or connect 8 or more cells of the same color. Classic mode has 25 intensity levels and five power-ups: place anywhere, clear a row, slow time, flip gravity, and shrink to a single hex. Full rules are at https://ultrahive.app/how-to-play/."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What is Hive Bits?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Hive Bits is a puzzle mode with 28 handcrafted levels. The boards include walls, moths, bee allies, and honey to collect."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What devices does UltraHive support?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "UltraHive runs on iPhone (iOS 17+), iPad (iPadOS 17+), Mac with Apple Silicon (macOS 14+), Apple Vision Pro (visionOS 1.0+), and Android. The iOS app launched on February 24, 2026 (version 1.6.0 on July 23, 2026). Android has been on Google Play since September 10, 2026."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does UltraHive work offline?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The Android app is fully offline and does not use Play Games. On iOS, Apple Game Center is used for leaderboards only. Scores and coins stay on the device."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does UltraHive collect personal data?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. UltraHive does not collect, store, or transmit personal data, and it does not use analytics or tracking tools. The privacy policy is at https://ultrahive.app/privacy/."
+                        }
+                    }
+                ]
             }
         ]
     }
@@ -250,6 +311,8 @@
 
         /* ── Sections ── */
         section { padding: 100px 24px; }
+        section[id] { scroll-margin-top: 80px; }
+        .hero { scroll-margin-top: 0; }
         .container { max-width: 1100px; margin: 0 auto; }
         .section-label {
             text-transform: uppercase;
@@ -526,46 +589,36 @@
         }
 
         /* ── FAQ ── */
-        .faq-list { margin-top: 48px; max-width: 700px; }
+        .faq-list { margin-top: 48px; max-width: 720px; }
         .faq-item {
             border-bottom: 1px solid var(--border);
         }
-        .faq-q {
-            width: 100%;
-            background: none;
-            border: none;
+        .faq-item summary {
+            list-style: none;
+            cursor: pointer;
             color: var(--text);
             font-size: 1rem;
             font-weight: 600;
             padding: 20px 0;
-            text-align: left;
-            cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-family: inherit;
+            gap: 16px;
         }
-        .faq-q::after {
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
             content: '+';
             font-size: 1.4rem;
             color: var(--accent);
             font-weight: 300;
-            transition: transform 0.3s;
             flex-shrink: 0;
-            margin-left: 16px;
         }
-        .faq-item.open .faq-q::after {
-            transform: rotate(45deg);
+        .faq-item[open] summary::after { content: '–'; }
+        .faq-item summary:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 4px;
         }
-        .faq-a {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-        .faq-item.open .faq-a {
-            max-height: 200px;
-        }
-        .faq-a p {
+        .faq-item p {
             padding-bottom: 20px;
             color: var(--text-muted);
             font-size: 0.92rem;
@@ -655,14 +708,15 @@
 <!-- Navigation -->
 <nav class="nav">
     <div class="nav-inner">
-        <a href="#" class="nav-logo"><span class="hex">&#x2B21;</span> UltraHive</a>
+        <a href="/" class="nav-logo"><span class="hex">&#x2B21;</span> UltraHive</a>
         <ul class="nav-links" id="navLinks">
             <li><a href="#features" onclick="closeNav()">Features</a></li>
             <li><a href="#modes" onclick="closeNav()">Game Modes</a></li>
+            <li><a href="/how-to-play/" onclick="closeNav()">How to Play</a></li>
             <li><a href="#screenshots" onclick="closeNav()">Screenshots</a></li>
             <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
             <li><a href="#support" onclick="closeNav()">Support</a></li>
-            <li><a href="https://apps.apple.com/app/ultrahive/id6759464109" class="nav-cta">Download</a></li>
+            <li><a href="#download" class="nav-cta" onclick="closeNav()">Download</a></li>
         </ul>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
             <span></span><span></span><span></span>
@@ -671,17 +725,17 @@
 </nav>
 
 <!-- Hero -->
-<section class="hero">
+<section class="hero" id="download">
     <div class="container">
-        <img src="/assets/app-icon.png"
-             alt="UltraHive app icon — a neon mechanical bee inside a hexagon" class="hero-icon" width="120" height="120">
+        <img src="/assets/app-icon-360.webp"
+             alt="UltraHive app icon — a neon mechanical bee inside a hexagon" class="hero-icon" width="360" height="360" fetchpriority="high">
         <h1>UltraHive</h1>
-        <p class="hero-tagline">Neon Hex Puzzle</p>
-        <p class="hero-desc">Drop hexagonal pieces into a neon cyberpunk honeycomb. Chain combos, deploy power-ups, and climb the leaderboard. If Tetris met hexagons, this is the game they'd build.</p>
+        <p class="hero-tagline">Hexagonal Tetris Puzzle</p>
+        <p class="hero-desc">A premium hexagonal Tetris-style puzzle for iPhone and Android. Drop pieces on a neon 11-column honeycomb, rotate 60°, and clear color chains of 8 or more. $2.99 once — no ads, no in-app purchases.</p>
         <div class="hero-ctas">
             <a href="https://apps.apple.com/us/app/ultrahive/id6759464109" class="hero-badge">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                     alt="Download on the App Store" width="180" height="54">
+                <img src="/assets/app-store-badge.svg"
+                     alt="Download on the App Store" width="162" height="54">
             </a>
             <a href="https://play.google.com/store/apps/details?id=com.ultrahive.app" class="hero-badge hero-badge-play">
                 <img src="/assets/google-play-badge.png"
@@ -696,8 +750,8 @@
 <section id="features">
     <div class="container">
         <p class="section-label">Features</p>
-        <h2 class="section-title">Everything you need for hex-based puzzle mastery</h2>
-        <p class="section-sub">An 11-column honeycomb board, strategic power-ups, and chain combos that reward skill and planning.</p>
+        <h2 class="section-title">A hex block puzzle with no ads</h2>
+        <p class="section-sub">An 11-column honeycomb, 60° rotation, a hold piece, a ghost preview, and color chains of 8 or more.</p>
         
         <!-- Why UltraHive vs Tetris -->
         <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 32px; margin-top: 40px; text-align: center;">
@@ -771,7 +825,7 @@
             <div class="feature-card">
                 <div class="feature-icon">🏆</div>
                 <h3>Game Center</h3>
-                <p>Compete on global leaderboards and track your personal bests across all 25 levels.</p>
+                <p>On iOS, Game Center leaderboards track personal bests. The Android app is fully offline, so scores stay on the device.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">💎</div>
@@ -798,13 +852,13 @@
                     <li>Chain clears (connect 8+ same colors)</li>
                     <li>5 tactical power-ups</li>
                     <li>25 intensity levels</li>
-                    <li>Global leaderboards</li>
+                    <li>Game Center leaderboards on iOS</li>
                 </ul>
             </div>
             <div class="mode-card hivebits">
-                <span class="mode-badge">New — Hive Bits</span>
+                <span class="mode-badge">Hive Bits</span>
                 <h3>Collect the Honey</h3>
-                <p>28 handcrafted puzzle levels. Navigate walls, dodge moth obstacles, and trigger bee allies to collect every drop of honey in this strategic mode.</p>
+                <p>28 handcrafted puzzle levels. Navigate walls, dodge moth obstacles, and trigger bee allies to collect every drop of honey. <a href="/how-to-play/#hive-bits">How Hive Bits works</a>.</p>
                 <ul class="mode-features">
                     <li>28 handcrafted levels</li>
                     <li>Walls and obstacles</li>
@@ -825,10 +879,10 @@
     </div>
     <div class="screenshots-track">
         <div style="flex: 0 0 max(24px, calc((100vw - 1100px) / 2));"></div>
-        <img src="/assets/01_TitleScreen.png" alt="UltraHive title screen with hexagonal logo, Deploy, and Hive Records buttons" width="220" height="476" loading="lazy">
-        <img src="/assets/02_Gameplay_Start.png" alt="UltraHive gameplay on an 11-column honeycomb grid with a falling hex piece and ghost landing preview" width="220" height="476" loading="lazy">
-        <img src="/assets/03_Gameplay_Mid.png" alt="UltraHive mid-game honeycomb board with stacked hex pieces, score, and five power-up buttons" width="220" height="476" loading="lazy">
-        <img src="/assets/04_Gameplay_Active.png" alt="UltraHive gameplay with a falling yellow hex piece, ghost preview, and colorful stacked honeycomb" width="220" height="476" loading="lazy">
+        <img src="/assets/screens/01_TitleScreen.jpg" alt="UltraHive title screen with hexagonal logo, Deploy, and Hive Records buttons" width="642" height="1389" loading="lazy" decoding="async">
+        <img src="/assets/screens/02_Gameplay_Start.jpg" alt="UltraHive gameplay on an 11-column honeycomb grid with a falling hex piece and ghost landing preview" width="642" height="1389" loading="lazy" decoding="async">
+        <img src="/assets/screens/03_Gameplay_Mid.jpg" alt="UltraHive mid-game honeycomb board with stacked hex pieces, score, and five power-up buttons" width="642" height="1389" loading="lazy" decoding="async">
+        <img src="/assets/screens/04_Gameplay_Active.jpg" alt="UltraHive gameplay with a falling yellow hex piece, ghost preview, and colorful stacked honeycomb" width="642" height="1389" loading="lazy" decoding="async">
         <div style="flex: 0 0 max(24px, calc((100vw - 1100px) / 2));"></div>
     </div>
 </section>
@@ -837,27 +891,28 @@
 <section id="howtoplay">
     <div class="container">
         <p class="section-label">How to Play</p>
-        <h2 class="section-title">Simple to learn, deep to master</h2>
+        <h2 class="section-title">How to play</h2>
+        <p class="section-sub">Rotate in 60° steps, clear a row, or connect 8 or more cells of the same color. <a href="/how-to-play/">Full rules</a>.</p>
         <div class="steps">
             <div class="step">
                 <div class="step-num">1</div>
                 <h3>Rotate &amp; Position</h3>
-                <p>Tap to rotate hex pieces and swipe to position them across the 11-column grid.</p>
+                <p>Tap to rotate in 60° steps and swipe to move across the 11-column honeycomb. A ghost preview shows the landing spot, and you can hold one piece.</p>
             </div>
             <div class="step">
                 <div class="step-num">2</div>
                 <h3>Complete Rows</h3>
-                <p>Fill entire rows to clear them from the board and score points. Chain multiple clears for bigger rewards.</p>
+                <p>Fill an entire row to clear it. Classic mode has 25 intensity levels.</p>
             </div>
             <div class="step">
                 <div class="step-num">3</div>
                 <h3>Build Color Chains</h3>
-                <p>Connect 16+ same-colored cells for massive bonus clears. Plan your colors carefully.</p>
+                <p>Connect 8 or more cells of the same color to clear that chain.</p>
             </div>
             <div class="step">
                 <div class="step-num">4</div>
                 <h3>Use Power-Ups</h3>
-                <p>Spend earned coins on 5 strategic abilities. Place Anywhere, Row Clear, Slow Time, Gravity Flip, or Shrink.</p>
+                <p>Five power-ups: place anywhere, clear a row, slow time, flip gravity, or shrink to a single hex.</p>
             </div>
         </div>
     </div>
@@ -869,26 +924,38 @@
         <p class="section-label">FAQ</p>
         <h2 class="section-title">Frequently asked questions</h2>
         <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q" aria-expanded="false">What devices does UltraHive support?</button>
-                <div class="faq-a"><p>UltraHive runs on iPhone (iOS 17+), iPad (iPadOS 17+), Mac with Apple Silicon (macOS 14+), Apple Vision Pro (visionOS 1.0+), and Android.</p></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" aria-expanded="false">How much does it cost?</button>
-                <div class="faq-a"><p>UltraHive is $2.99 with no ads and no in-app purchases. One purchase, full game. It also supports Family Sharing for up to 6 family members.</p></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" aria-expanded="false">Does it collect my data?</button>
-                <div class="faq-a"><p>No. UltraHive does not collect, store, or transmit any personal data. Scores and coins are stored locally on your device. No analytics or tracking tools are used. Read the <a href="/privacy/">privacy policy</a>.</p></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" aria-expanded="false">What is Hive Bits?</button>
-                <div class="faq-a"><p>Hive Bits is a strategic puzzle mode introduced in version 1.0.1. It features 28 handcrafted levels with walls, moth obstacles, and bee allies. Your goal is to collect honey across increasingly challenging layouts.</p></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" aria-expanded="false">Does it support Game Center?</button>
-                <div class="faq-a"><p>Yes. UltraHive integrates with Apple Game Center for global leaderboards so you can compete with players worldwide and track your personal bests.</p></div>
-            </div>
+            <details class="faq-item">
+                <summary>What is UltraHive?</summary>
+                <p>UltraHive is a premium hexagonal falling-block puzzle by Ripsaw LLC. Pieces drop onto a neon 11-column honeycomb and rotate in 60-degree steps. It costs $2.99 once, with no ads and no in-app purchases, on iPhone and Android.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Is UltraHive a hexagonal Tetris?</summary>
+                <p>Yes. It is a tetris-like falling-block puzzle on hexagons instead of squares. You can hold one piece, and a ghost preview shows where the piece will land. There are no ads and no in-app purchases.</p>
+            </details>
+            <details class="faq-item">
+                <summary>How much does UltraHive cost?</summary>
+                <p>UltraHive is $2.99 one-time on the App Store and Google Play. There are no ads and no in-app purchases. Family Sharing is available on Apple.</p>
+            </details>
+            <details class="faq-item">
+                <summary>How do you play UltraHive?</summary>
+                <p>Drop pieces on the 11-column honeycomb, rotate them in 60-degree steps, and use the ghost preview and hold piece to plan a landing. Clear a full row, or connect 8 or more cells of the same color. Classic mode has 25 intensity levels and five power-ups: place anywhere, clear a row, slow time, flip gravity, and shrink to a single hex. Full rules are at <a href="https://ultrahive.app/how-to-play/">https://ultrahive.app/how-to-play/</a>.</p>
+            </details>
+            <details class="faq-item">
+                <summary>What is Hive Bits?</summary>
+                <p>Hive Bits is a puzzle mode with 28 handcrafted levels. The boards include walls, moths, bee allies, and honey to collect.</p>
+            </details>
+            <details class="faq-item">
+                <summary>What devices does UltraHive support?</summary>
+                <p>UltraHive runs on iPhone (iOS 17+), iPad (iPadOS 17+), Mac with Apple Silicon (macOS 14+), Apple Vision Pro (visionOS 1.0+), and Android. The iOS app launched on February 24, 2026 (version 1.6.0 on July 23, 2026). Android has been on Google Play since September 10, 2026.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Does UltraHive work offline?</summary>
+                <p>The Android app is fully offline and does not use Play Games. On iOS, Apple Game Center is used for leaderboards only. Scores and coins stay on the device.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Does UltraHive collect personal data?</summary>
+                <p>No. UltraHive does not collect, store, or transmit personal data, and it does not use analytics or tracking tools. The privacy policy is at <a href="https://ultrahive.app/privacy/">https://ultrahive.app/privacy/</a>.</p>
+            </details>
         </div>
     </div>
 </section>
@@ -920,6 +987,7 @@
     <ul class="footer-links">
         <li><a href="#features">Features</a></li>
         <li><a href="#modes">Game Modes</a></li>
+        <li><a href="/how-to-play/">How to Play</a></li>
         <li><a href="#support">Support</a></li>
         <li><a href="/privacy/">Privacy</a></li>
         <li><a href="/press/">Press</a></li>
@@ -942,22 +1010,6 @@
         hamburger.classList.remove('active');
         navLinks.classList.remove('open');
     }
-
-    // FAQ accordion
-    document.querySelectorAll('.faq-q').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const item = btn.parentElement;
-            const isOpen = item.classList.contains('open');
-            // Close all
-            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-            document.querySelectorAll('.faq-q').forEach(b => b.setAttribute('aria-expanded', 'false'));
-            // Open clicked (if it wasn't already open)
-            if (!isOpen) {
-                item.classList.add('open');
-                btn.setAttribute('aria-expanded', 'true');
-            }
-        });
-    });
 </script>
 
 </body>
