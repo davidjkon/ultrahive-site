@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UltraHive — Hexagonal Tetris Puzzle for iPhone &amp; Android</title>
+    <title>UltraHive — Hexagonal Block Puzzle Like Tetris | iPhone &amp; Android</title>
     <meta name="description" content="A premium tetris-like hex block puzzle with no ads. Neon 11-column honeycomb, 60° rotation, hold piece, and ghost preview. $2.99 once on iPhone and Android.">
     <meta name="keywords" content="hexagonal tetris, hex block puzzle, tetris-like game no ads, premium puzzle game, UltraHive, honeycomb puzzle, iPhone puzzle game, Android puzzle game">
     <meta name="author" content="Ripsaw LLC">
@@ -16,7 +16,7 @@
     <meta name="apple-itunes-app" content="app-id=6759464109">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="UltraHive — Hexagonal Tetris Puzzle for iPhone &amp; Android">
+    <meta property="og:title" content="UltraHive — Hexagonal Block Puzzle Like Tetris | iPhone &amp; Android">
     <meta property="og:description" content="A premium tetris-like hex block puzzle with no ads. Neon 11-column honeycomb, 60° rotation, hold piece, and ghost preview. $2.99 once on iPhone and Android.">
     <meta property="og:image" content="https://ultrahive.app/assets/og-share.jpg">
     <meta property="og:image:type" content="image/jpeg">
@@ -30,7 +30,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="UltraHive — Hexagonal Tetris Puzzle for iPhone &amp; Android">
+    <meta name="twitter:title" content="UltraHive — Hexagonal Block Puzzle Like Tetris | iPhone &amp; Android">
     <meta name="twitter:description" content="A premium tetris-like hex block puzzle with no ads. Neon 11-column honeycomb, 60° rotation, hold piece, and ghost preview. $2.99 once on iPhone and Android.">
     <meta name="twitter:image" content="https://ultrahive.app/assets/og-share.jpg">
     <meta name="twitter:image:alt" content="UltraHive — $2.99 neon hex puzzle for iOS and Android, with title screen and honeycomb gameplay">
@@ -58,7 +58,7 @@
                 "@type": "WebPage",
                 "@id": "https://ultrahive.app/#webpage",
                 "url": "https://ultrahive.app/",
-                "name": "UltraHive — Hexagonal Tetris Puzzle for iPhone & Android",
+                "name": "UltraHive — Hexagonal Block Puzzle Like Tetris | iPhone & Android",
                 "description": "A premium tetris-like hex block puzzle with no ads. Neon 11-column honeycomb, 60° rotation, hold piece, and ghost preview. $2.99 once on iPhone and Android.",
                 "isPartOf": { "@id": "https://ultrahive.app/#website" },
                 "about": { "@id": "https://ultrahive.app/#game" },
@@ -153,6 +153,14 @@
                     },
                     {
                         "@type": "Question",
+                        "name": "Is UltraHive like Hextris?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Hextris rotates a hexagon to catch falling blocks. UltraHive places hex pieces on a honeycomb board."
+                        }
+                    },
+                    {
+                        "@type": "Question",
                         "name": "How much does UltraHive cost?",
                         "acceptedAnswer": {
                             "@type": "Answer",
@@ -197,6 +205,14 @@
                         "acceptedAnswer": {
                             "@type": "Answer",
                             "text": "No. UltraHive does not collect, store, or transmit personal data, and it does not use analytics or tracking tools. The privacy policy is at https://ultrahive.app/privacy/."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Was UltraHive made with AI?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Most of the code was written with AI assistance (Claude Code), with game design, testing and tuning by the developer, David Kon / Ripsaw LLC."
                         }
                     }
                 ]
@@ -666,6 +682,13 @@
             font-size: 0.75rem;
             color: rgba(138, 122, 106, 0.6);
         }
+        .footer-legal {
+            margin: 12px auto 0;
+            max-width: 640px;
+            font-size: 0.75rem;
+            line-height: 1.5;
+            color: rgba(138, 122, 106, 0.75);
+        }
 
         /* ── Responsive ── */
         @media (max-width: 1024px) {
@@ -756,7 +779,8 @@
         <!-- Why UltraHive vs Tetris -->
         <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 32px; margin-top: 40px; text-align: center;">
             <h3 style="font-size: 1.3rem; margin-bottom: 16px; color: var(--accent);">Why UltraHive?</h3>
-            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 24px;">If you love Tetris, you'll love UltraHive. It's the puzzle game you know and love — reimagined with hexagonal grids.</p>
+            <p style="color: var(--text-muted); max-width: 640px; margin: 0 auto 12px;">If you like Tetris-style falling blocks, try them on hexagons. <a href="/how-to-play/#differs-from-tetris">How it differs from Tetris</a>.</p>
+            <p style="color: var(--text-muted); max-width: 640px; margin: 0 auto 24px;">Most of the code was written with AI assistance (Claude Code), with game design, testing and tuning by the developer, David Kon / Ripsaw LLC.</p>
             <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; font-size: 0.9rem;">
                 <div>
                     <div style="font-size: 1.8rem; color: var(--accent);">⬡</div>
@@ -790,12 +814,12 @@
             <div class="feature-card">
                 <div class="feature-icon">🧩</div>
                 <h3>15 Unique Pieces</h3>
-                <p>Monohex dots, dihex bars, trihex triangles, tetrahex hooks, and pentahex snakes. Each piece belongs to one of six colors.</p>
+                <p>Monohex dots, dihex bars, trihex triangles, tetrahex hooks, and pentahex snakes. Each piece belongs to one of six colors. <a href="/how-to-play/#hex-pieces">Hex pieces explained</a>.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">⚡</div>
                 <h3>Chain Clear System</h3>
-                <p>Connect 8+ cells of the same color anywhere to trigger chain reactions. Cascading clears multiply your score!</p>
+                <p>Connect 8+ cells of the same color anywhere to trigger chain reactions. Cascading clears multiply your score. <a href="/how-to-play/#chain-clears">Tips for chain clears</a>.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🎯</div>
@@ -892,7 +916,7 @@
     <div class="container">
         <p class="section-label">How to Play</p>
         <h2 class="section-title">How to play</h2>
-        <p class="section-sub">Rotate in 60° steps, clear a row, or connect 8 or more cells of the same color. <a href="/how-to-play/">Full rules</a>.</p>
+        <p class="section-sub">Rotate in 60° steps, clear a row, or connect 8 or more cells of the same color. <a href="/how-to-play/">Full rules</a>, <a href="/how-to-play/#chain-clears">tips for chain clears</a>, <a href="/how-to-play/#hex-pieces">hex pieces</a>, and <a href="/how-to-play/#differs-from-tetris">how it differs from Tetris</a>.</p>
         <div class="steps">
             <div class="step">
                 <div class="step-num">1</div>
@@ -933,6 +957,11 @@
                 <p>Yes. It is a tetris-like falling-block puzzle on hexagons instead of squares. You can hold one piece, and a ghost preview shows where the piece will land. There are no ads and no in-app purchases.</p>
             </details>
             <details class="faq-item">
+                <!-- PENDING-DAVID-APPROVAL -->
+                <summary>Is UltraHive like Hextris?</summary>
+                <p>Hextris rotates a hexagon to catch falling blocks. UltraHive places hex pieces on a honeycomb board.</p>
+            </details>
+            <details class="faq-item">
                 <summary>How much does UltraHive cost?</summary>
                 <p>UltraHive is $2.99 one-time on the App Store and Google Play. There are no ads and no in-app purchases. Family Sharing is available on Apple.</p>
             </details>
@@ -955,6 +984,10 @@
             <details class="faq-item">
                 <summary>Does UltraHive collect personal data?</summary>
                 <p>No. UltraHive does not collect, store, or transmit personal data, and it does not use analytics or tracking tools. The privacy policy is at <a href="https://ultrahive.app/privacy/">https://ultrahive.app/privacy/</a>.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Was UltraHive made with AI?</summary>
+                <p>Yes. Most of the code was written with AI assistance (Claude Code), with game design, testing and tuning by the developer, David Kon / Ripsaw LLC.</p>
             </details>
         </div>
     </div>
@@ -996,6 +1029,7 @@
     </ul>
     <p class="footer-copy">&copy; 2026 Ripsaw LLC. All rights reserved.</p>
     <p class="footer-platforms">Designed for iPhone, iPad, Mac, Apple Vision Pro, and Android</p>
+    <p class="footer-legal">UltraHive is not affiliated with or endorsed by The Tetris Company. Tetris is a trademark of The Tetris Holding, LLC.</p>
 </footer>
 
 <script>

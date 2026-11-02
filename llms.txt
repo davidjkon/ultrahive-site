@@ -8,10 +8,14 @@ The iOS app launched on 2026-02-24. Version 1.6.0 was released on 2026-07-23. Ga
 
 No rating, review count, award, or download total is stated on this site.
 
+Most of the code was written with AI assistance (Claude Code). Game design, testing and tuning are by the developer, David Kon / Ripsaw LLC.
+
+UltraHive is not affiliated with or endorsed by The Tetris Company. Tetris is a trademark of The Tetris Holding, LLC.
+
 ## Pages
 
 - [Home](https://ultrahive.app/): Product page with features, Classic and Hive Bits, screenshots, and FAQ
-- [How to play](https://ultrahive.app/how-to-play/): Rules for rotation, clears, power-ups, and Hive Bits
+- [How to play](https://ultrahive.app/how-to-play/): Rules for rotation, clears, power-ups, and Hive Bits. Also tips for chain clears (8 or more connected cells of the same color; cascading clears multiply the score), the 15 hex pieces from monohex to pentahex, and how the honeycomb differs from a square falling-block grid
 - [Press kit](https://ultrahive.app/press/): Facts, screenshots, and contact for reviewers
 - [Privacy policy](https://ultrahive.app/privacy/): No personal data collection. Canonical privacy URL
 
