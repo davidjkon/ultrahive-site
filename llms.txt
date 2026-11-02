@@ -8,7 +8,7 @@ The iOS app launched on 2026-02-24. Version 1.6.0 was released on 2026-07-23. Ga
 
 No rating, review count, award, or download total is stated on this site.
 
-Most of the code was written with AI assistance (Claude Code). Game design, testing and tuning are by the developer, David Kon / Ripsaw LLC.
+Most of the code was written with AI assistance (Claude Code). Game design, testing and tuning are by the developer, David Kon / Ripsaw LLC. The build note is at https://ultrahive.app/made-with-claude-code/. It does not state an origin for the art.
 
 UltraHive is not affiliated with or endorsed by The Tetris Company. Tetris is a trademark of The Tetris Holding, LLC.
 
@@ -18,6 +18,9 @@ UltraHive is not affiliated with or endorsed by The Tetris Company. Tetris is a 
 - [How to play](https://ultrahive.app/how-to-play/): Rules for rotation, clears, power-ups, and Hive Bits. Also tips for chain clears (8 or more connected cells of the same color; cascading clears multiply the score), the 15 hex pieces from monohex to pentahex, and how the honeycomb differs from a square falling-block grid
 - [Press kit](https://ultrahive.app/press/): Facts, screenshots, and contact for reviewers
 - [Privacy policy](https://ultrahive.app/privacy/): No personal data collection. Canonical privacy URL
+- [Hexagonal games like Tetris](https://ultrahive.app/hexagonal-tetris-games/): Comparison of hexagon block puzzles. UltraHive is our game. Other rows use only facts from each game's official page. No ratings or download counts
+- [No ads](https://ultrahive.app/no-ads-puzzle-game/): $2.99 once, no ads, no in-app purchases. Android is fully offline. On iOS the game plays offline and Game Center is for leaderboards only
+- [Built with Claude Code](https://ultrahive.app/made-with-claude-code/): Most of the code was written with Claude Code. Design, testing, and tuning are by David Kon / Ripsaw LLC
 
 ## Store listings
 

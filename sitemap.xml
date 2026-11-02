@@ -19,6 +19,24 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ultrahive.app/hexagonal-tetris-games/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ultrahive.app/no-ads-puzzle-game/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ultrahive.app/made-with-claude-code/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ultrahive.app/privacy/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>yearly</changefreq>

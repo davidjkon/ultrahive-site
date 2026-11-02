@@ -1,0 +1,68 @@
+# Pings IndexNow after GitHub Pages publishes ultrahive.app.
+# The key is public on purpose: it is served at /<key>.txt so search engines
+# can verify the host. This workflow does not use a repository secret.
+name: IndexNow
+
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout published commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - name: Submit sitemap URLs
+        run: |
+          set -euo pipefail
+          keyfile=$(find . -maxdepth 1 -regextype posix-extended -regex './[A-Za-z0-9-]{8,128}\.txt' -printf '%f\n')
+          count=$(printf '%s\n' "$keyfile" | sed '/^$/d' | wc -l)
+          if [ "$count" -ne 1 ]; then
+            echo "Expected exactly one IndexNow key file at the repo root."
+            exit 1
+          fi
+          key=$(tr -d '\n' < "$keyfile")
+          if [ "$key" != "${keyfile%.txt}" ]; then
+            echo "Key file contents do not match the file name."
+            exit 1
+          fi
+          KEYFILE="$keyfile" KEY="$key" python3 - << 'PY'
+          import json, os, re, pathlib, urllib.error, urllib.request
+          urls = re.findall(r"<loc>([^<]+)</loc>", pathlib.Path("sitemap.xml").read_text())
+          if not urls:
+              raise SystemExit("sitemap.xml has no URLs")
+          keyfile = os.environ["KEYFILE"]
+          key = os.environ["KEY"]
+          body = {
+              "host": "ultrahive.app",
+              "key": key,
+              "keyLocation": f"https://ultrahive.app/{keyfile}",
+              "urlList": urls,
+          }
+          req = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=json.dumps(body).encode(),
+              headers={"Content-Type": "application/json; charset=utf-8"},
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=30) as resp:
+                  status = resp.status
+                  payload = resp.read().decode()
+          except urllib.error.HTTPError as exc:
+              status = exc.code
+              payload = exc.read().decode()
+          print(status)
+          print(payload)
+          if status not in (200, 202):
+              raise SystemExit(f"IndexNow returned HTTP {status}")
+          PY
