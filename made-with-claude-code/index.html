@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How UltraHive Was Built (Mostly) With Claude Code</title>
+    <meta name="description" content="How one developer shipped UltraHive to iPhone and Android mostly with Claude Code: what the AI wrote, and what David Kon designed and tested.">
+    <meta name="author" content="David Kon, Ripsaw LLC">
+    <meta name="theme-color" content="#0d0a14">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://ultrahive.app/made-with-claude-code/">
+    <link rel="icon" href="/assets/favicon-48.png" type="image/png" sizes="48x48">
+    <link rel="apple-touch-icon" href="/assets/app-icon.png">
+    <meta name="apple-itunes-app" content="app-id=6759464109">
+
+    <meta property="og:title" content="How UltraHive Was Built (Mostly) With Claude Code">
+    <meta property="og:description" content="How one developer shipped UltraHive to iPhone and Android mostly with Claude Code: what the AI wrote, and what David Kon designed and tested.">
+    <meta property="og:image" content="https://ultrahive.app/assets/og-share.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="UltraHive — $2.99 neon hex puzzle for iOS and Android, with title screen and honeycomb gameplay">
+    <meta property="og:url" content="https://ultrahive.app/made-with-claude-code/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="UltraHive">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How UltraHive Was Built (Mostly) With Claude Code">
+    <meta name="twitter:description" content="How one developer shipped UltraHive to iPhone and Android mostly with Claude Code: what the AI wrote, and what David Kon designed and tested.">
+    <meta name="twitter:image" content="https://ultrahive.app/assets/og-share.jpg">
+    <meta name="twitter:image:alt" content="UltraHive — $2.99 neon hex puzzle for iOS and Android, with title screen and honeycomb gameplay">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://ultrahive.app/#organization",
+                "name": "Ripsaw LLC",
+                "url": "https://ripsaw.co",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://ultrahive.app/assets/app-icon.png",
+                    "width": 512,
+                    "height": 512
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://ultrahive.app/#website",
+                "url": "https://ultrahive.app/",
+                "name": "UltraHive",
+                "publisher": { "@id": "https://ultrahive.app/#organization" },
+                "inLanguage": "en"
+            },
+            {
+                "@type": "Person",
+                "@id": "https://ultrahive.app/#david-kon",
+                "name": "David Kon",
+                "affiliation": { "@id": "https://ultrahive.app/#organization" }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://ultrahive.app/made-with-claude-code/#breadcrumbs",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "UltraHive",
+                        "item": "https://ultrahive.app/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Built with Claude Code",
+                        "item": "https://ultrahive.app/made-with-claude-code/"
+                    }
+                ]
+            },
+            {
+                "@type": ["VideoGame", "MobileApplication"],
+                "@id": "https://ultrahive.app/#game",
+                "name": "UltraHive",
+                "url": "https://ultrahive.app/"
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://ultrahive.app/made-with-claude-code/#webpage",
+                "url": "https://ultrahive.app/made-with-claude-code/",
+                "name": "How UltraHive Was Built (Mostly) With Claude Code",
+                "isPartOf": { "@id": "https://ultrahive.app/#website" },
+                "about": { "@id": "https://ultrahive.app/#game" },
+                "breadcrumb": { "@id": "https://ultrahive.app/made-with-claude-code/#breadcrumbs" },
+                "inLanguage": "en"
+            },
+            {
+                "@type": "Article",
+                "@id": "https://ultrahive.app/made-with-claude-code/#article",
+                "headline": "Building a Hexagonal Puzzle Game With Claude Code",
+                "description": "How one developer shipped UltraHive to iPhone and Android mostly with Claude Code: what the AI wrote, and what David Kon designed and tested.",
+                "url": "https://ultrahive.app/made-with-claude-code/",
+                "mainEntityOfPage": { "@id": "https://ultrahive.app/made-with-claude-code/#webpage" },
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://ultrahive.app/assets/og-share.jpg",
+                    "width": 1200,
+                    "height": 630
+                },
+                "datePublished": "2026-11-02",
+                "dateModified": "2026-11-02",
+                "inLanguage": "en",
+                "about": { "@id": "https://ultrahive.app/#game" },
+                "author": { "@id": "https://ultrahive.app/#david-kon" },
+                "publisher": { "@id": "https://ultrahive.app/#organization" }
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://ultrahive.app/made-with-claude-code/#faq",
+                "url": "https://ultrahive.app/made-with-claude-code/#faq",
+                "isPartOf": { "@id": "https://ultrahive.app/made-with-claude-code/#webpage" },
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Was UltraHive made with AI?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Most of the code was written with AI assistance (Claude Code). Game design, testing, and tuning are by David Kon / Ripsaw LLC."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is the art AI-generated?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "This site does not say how the art was made. It does not say the art is AI-generated, and it does not say a person drew it."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Who designed the puzzles?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Game design, testing, and tuning are by David Kon / Ripsaw LLC. Hive Bits is 28 handcrafted puzzles. This page does not describe a separate design process for those puzzles."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0d0a14;
+            --bg-card: rgba(255, 255, 255, 0.04);
+            --border: rgba(255, 136, 0, 0.12);
+            --text: #f0e6d6;
+            --text-muted: #8a7a6a;
+            --accent: #ff8800;
+            --accent-light: #ffcc00;
+            --purple: #a855f7;
+            --nav-height: 64px;
+        }
+        html { scroll-behavior: smooth; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--accent-light); }
+        img { max-width: 100%; display: block; }
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: var(--nav-height);
+            background: rgba(13, 10, 20, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-inner {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-light), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-logo .hex { -webkit-text-fill-color: var(--accent); font-size: 1rem; }
+        .nav-ctas { display: flex; align-items: center; gap: 10px; }
+        .nav-cta {
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            color: #000 !important;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+        section { padding: 100px 24px 40px; }
+        section[id] { scroll-margin-top: 80px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .section-label {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+        .byline {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 800;
+            margin: 48px 0 16px;
+            scroll-margin-top: 88px;
+        }
+        .lede, .rule p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        .rule ul {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin: 0 0 16px 1.25rem;
+        }
+        .rule li { margin-bottom: 8px; }
+        .faq-list { margin-top: 8px; }
+        .faq-item { border-bottom: 1px solid var(--border); }
+        .faq-item summary {
+            list-style: none;
+            cursor: pointer;
+            color: var(--text);
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            font-size: 1.4rem;
+            color: var(--accent);
+            font-weight: 300;
+            flex-shrink: 0;
+        }
+        .faq-item[open] summary::after { content: '\2013'; }
+        .faq-item summary:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 4px;
+        }
+        .faq-item p {
+            padding-bottom: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .store-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px 4px;
+            margin-top: 8px;
+        }
+        .store-row img { height: 54px; width: auto; }
+        .store-row .play img { height: 80px; margin: -13px 0; }
+        .footer {
+            padding: 40px 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            list-style: none;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        .footer-links a { color: var(--text-muted); font-size: 0.85rem; }
+        .footer-links a:hover { color: var(--text); }
+        .footer-copy { font-size: 0.8rem; color: var(--text-muted); }
+        .footer-legal {
+            margin: 12px auto 0;
+            max-width: 640px;
+            font-size: 0.75rem;
+            line-height: 1.5;
+            color: rgba(138, 122, 106, 0.75);
+        }
+        @media (max-width: 700px) {
+            .nav-cta { padding: 8px 12px; }
+        }
+    </style>
+</head>
+<body>
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo"><span class="hex">&#x2B21;</span> UltraHive</a>
+        <div class="nav-ctas">
+            <a href="https://apps.apple.com/us/app/ultrahive/id6759464109" class="nav-cta">App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.ultrahive.app" class="nav-cta">Google Play</a>
+        </div>
+    </div>
+</nav>
+
+<section>
+    <div class="container rule">
+        <p class="section-label">How it was built</p>
+        <h1>Building a Hexagonal Puzzle Game With Claude Code</h1>
+        <!-- PENDING-DAVID-REVIEW: author byline. Schema author is David Kon, affiliation Ripsaw LLC. Change it if that credit is wrong. -->
+        <p class="byline">By David Kon, Ripsaw LLC</p>
+        <p class="lede">Most of the code for UltraHive was written with AI assistance (Claude Code). Game design, testing, and tuning are by David Kon / Ripsaw LLC. The game is a $2.99 hexagonal falling-block puzzle on iPhone and Android, with no ads and no in-app purchases.</p>
+
+        <h2 id="dates">What shipped, and when</h2>
+        <ul>
+            <li>February 24, 2026: the iOS app launched on the App Store.</li>
+            <li>July 23, 2026: version 1.6.0.</li>
+            <li>September 10, 2026: Android on Google Play. The Android app is fully offline.</li>
+        </ul>
+        <p>It runs on iPhone (iOS 17+), iPad, Mac with Apple Silicon (macOS 14+), Apple Vision Pro, and Android. On iOS, Game Center is used for leaderboards only. The game plays offline on iOS. Family Sharing is available on Apple.</p>
+
+        <h2 id="who-did-what">What the AI wrote, and what a person did</h2>
+        <p>Most of the code was written with Claude Code. David Kon designed the game, tested it, and tuned it. That is the split this site states. It is the same credit on the <a href="/">home page</a> and in the <a href="/press/">press kit</a>.</p>
+        <p>The game itself is a honeycomb, not a square grid. Pieces drop on an 11-column board and rotate in 60-degree steps. You can hold one piece, and a ghost preview shows where it will land. Classic mode has 25 intensity levels and five power-ups. Hive Bits is 28 handcrafted puzzles. <a href="/how-to-play/">How to play</a>.</p>
+
+        <!-- TODO DAVID: Add build details you have confirmed: how hex-grid rotation was implemented, which parts you wrote by hand versus Claude Code, art and audio sources, tools, and lessons from shipping. Do not add an art-origin claim or an engineering detail that is not already public on ultrahive.app. -->
+        <h2 id="not-claimed">What this page does not say</h2>
+        <p>This site does not say how the art was made. It does not say the art is AI-generated, and it does not say a person drew it. It also does not describe the code, the engine, or the steps used to rotate a piece on the hex grid. Those details can be added later by David Kon.</p>
+
+        <h2 id="stores">On both stores</h2>
+        <p>UltraHive is $2.99 once, with no ads and no in-app purchases. <a href="/no-ads-puzzle-game/">Offline play and privacy</a> are spelled out separately. Press notes are in the <a href="/press/">press kit</a>.</p>
+        <div class="store-row">
+            <a href="https://apps.apple.com/us/app/ultrahive/id6759464109">
+                <img src="/assets/app-store-badge.svg" alt="Download on the App Store" width="162" height="54">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.ultrahive.app" class="play">
+                <img src="/assets/google-play-badge.png" alt="Get it on Google Play" width="206" height="80">
+            </a>
+        </div>
+
+        <h2 id="faq">Questions</h2>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>Was UltraHive made with AI?</summary>
+                <p>Yes. Most of the code was written with AI assistance (Claude Code). Game design, testing, and tuning are by David Kon / Ripsaw LLC.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Is the art AI-generated?</summary>
+                <p>This site does not say how the art was made. It does not say the art is AI-generated, and it does not say a person drew it.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Who designed the puzzles?</summary>
+                <p>Game design, testing, and tuning are by David Kon / Ripsaw LLC. Hive Bits is 28 handcrafted puzzles. This page does not describe a separate design process for those puzzles.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <ul class="footer-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/how-to-play/">How to Play</a></li>
+        <li><a href="/hexagonal-tetris-games/">Hex Games</a></li>
+        <li><a href="/no-ads-puzzle-game/">No Ads</a></li>
+        <li><a href="/press/">Press</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="https://apps.apple.com/us/app/ultrahive/id6759464109">App Store</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.ultrahive.app">Google Play</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 Ripsaw LLC. All rights reserved.</p>
+    <p class="footer-legal">UltraHive is not affiliated with or endorsed by The Tetris Company. Tetris is a trademark of The Tetris Holding, LLC.</p>
+</footer>
+</body>
+</html>
