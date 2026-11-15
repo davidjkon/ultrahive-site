@@ -4,7 +4,7 @@
 
 Pieces drop onto a neon 11-column honeycomb and rotate in 60-degree steps. A hold piece and a ghost preview are included. Color chains of 8 or more cells clear. Classic mode has 25 intensity levels and five power-ups: place anywhere, clear a row, slow time, flip gravity, and shrink to a single hex. Hive Bits is 28 handcrafted puzzles with walls, moths, bee allies, and honey.
 
-The iOS app launched on 2026-02-24. Version 1.6.0 was released on 2026-07-23. Game Center is used for leaderboards only. Family Sharing is available on Apple. Android has been on Google Play since 2026-09-10 and is fully offline. Scores and coins stay on the device. UltraHive does not collect personal data.
+The iOS app launched on 2026-02-24. Version 1.7 was released on 2026-11-15. Game Center is used for leaderboards only. Family Sharing is available on Apple. Android has been on Google Play since 2026-09-10 and is fully offline. Scores and coins stay on the device. UltraHive does not collect personal data.
 
 No rating, review count, award, or download total is stated on this site.
 
@@ -20,14 +20,24 @@ UltraHive is not affiliated with or endorsed by The Tetris Company. Tetris is a 
 - [Privacy policy](https://ultrahive.app/privacy/): No personal data collection. Canonical privacy URL
 - [Hexagonal games like Tetris](https://ultrahive.app/hexagonal-tetris-games/): Comparison of hexagon block puzzles. UltraHive is our game. Other rows use only facts from each game's official page. No ratings or download counts
 - [No ads](https://ultrahive.app/no-ads-puzzle-game/): $2.99 once, no ads, no in-app purchases. Android is fully offline. On iOS the game plays offline and Game Center is for leaderboards only
+- [Strategy](https://ultrahive.app/strategy/): Scoring table, combo, multi-chain and perfect-clear bonuses, drop speed at each of the 25 levels, and tips
+- [Pieces](https://ultrahive.app/pieces/): All 15 pieces by size, shape and color: 1 monohex, 1 dihex, 2 trihexes, 6 tetrahexes, 5 pentahexes
+- [Power-ups](https://ultrahive.app/power-ups/): Slow 60 coins, Tiny 80, Place 100, Flip 120, Clear 150. One coin per 100 points. Coins cannot be bought
+- [Hive Bits](https://ultrahive.app/hive-bits/): The 28 puzzle levels in six chapters, and what honey, walls, bee eggs, moth eggs, magic honey and holes do
+- [Games without ads](https://ultrahive.app/games-without-ads/): How to check a game's store listing for ads on Google Play and the App Store
+- [No wifi games](https://ultrahive.app/no-wifi-games/): Why some games need a connection, how to test one in airplane mode, and how UltraHive plays offline
+- [Games like Tetris](https://ultrahive.app/games-like-tetris/): The kinds of falling-block puzzle and what a hexagonal grid changes
+- [Changelog](https://ultrahive.app/changelog/): Version history
+- [About](https://ultrahive.app/about/): Developer David Kon, publisher Ripsaw LLC, key facts, contact
 - [Built with Claude Code](https://ultrahive.app/made-with-claude-code/): Most of the code was written with Claude Code. Design, testing, and tuning are by David Kon / Ripsaw LLC
 
 ## Store listings
 
-- [App Store](https://apps.apple.com/us/app/ultrahive/id6759464109): iPhone, iPad, Mac with Apple Silicon, and Apple Vision Pro. App Store id 6759464109. Launched 2026-02-24. Version 1.6.0 on 2026-07-23
+- [App Store](https://apps.apple.com/us/app/ultrahive/id6759464109): iPhone, iPad, Mac with Apple Silicon, and Apple Vision Pro. App Store id 6759464109. Launched 2026-02-24. Version 1.7 on 2026-11-15
 - [Google Play](https://play.google.com/store/apps/details?id=com.ultrahive.app): Android package com.ultrahive.app. Live since 2026-09-10. Fully offline
 
 ## Publisher
 
 - [Ripsaw LLC](https://ripsaw.co): Publisher of UltraHive
+- X: https://x.com/UltraHiveGame
 - Support and press: support@ultrahive.app
