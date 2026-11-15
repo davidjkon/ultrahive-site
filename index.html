@@ -131,6 +131,19 @@
                 "publisher": { "@id": "https://ultrahive.app/#organization" }
             },
             {
+                "@type": "VideoObject",
+                "@id": "https://ultrahive.app/#trailer",
+                "name": "UltraHive gameplay trailer",
+                "description": "Thirty seconds of UltraHive: hex pieces with six rotations, a four-line clear, a color chain, the Flip and Tiny power-ups, Hive Bits, and Classic at level 18.",
+                "thumbnailUrl": "https://ultrahive.app/assets/ultrahive-trailer-poster.jpg",
+                "contentUrl": "https://ultrahive.app/assets/ultrahive-trailer.mp4",
+                "uploadDate": "2026-11-15T15:00:00-07:00",
+                "duration": "PT30S",
+                "width": 720,
+                "height": 1280,
+                "publisher": { "@id": "https://ultrahive.app/#organization" }
+            },
+            {
                 "@type": "FAQPage",
                 "@id": "https://ultrahive.app/#faq",
                 "url": "https://ultrahive.app/#faq",
@@ -903,6 +916,12 @@
     <div class="container">
         <p class="section-label">Screenshots</p>
         <h2 class="section-title">See it in action</h2>
+        <video controls muted playsinline preload="none" width="720" height="1280"
+               poster="/assets/ultrahive-trailer-poster.jpg"
+               aria-label="UltraHive gameplay trailer, 30 seconds, no sound"
+               style="display:block; width:100%; max-width:320px; height:auto; margin:8px auto 36px; border-radius:20px; border:1px solid rgba(255,136,0,0.25); background:#0c0805;">
+            <source src="/assets/ultrahive-trailer.mp4" type="video/mp4">
+        </video>
     </div>
     <div class="screenshots-track">
         <div style="flex: 0 0 max(24px, calc((100vw - 1100px) / 2));"></div>
